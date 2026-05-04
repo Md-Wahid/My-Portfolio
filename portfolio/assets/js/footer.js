@@ -1,29 +1,29 @@
 $(document).ready(function(){
 
     $.ajax({
-        url: './components/navbar.html',
+        url: './components/footer.html',
         method: 'GET',
         success: function(data) {
-            $('#navbar').html(data);
+            $('#footerElement').html(data);
         },
         error: function() {
-            console.error('Error loading navbar');
+            console.error('Error loading footer');
         }
     })
 
-    // fetch('./components/navbar.html')
+    // fetch('./components/footer.html')
     // .then(response => {
     //     if (!response.ok) {
-    //         throw new Error('Navbar file not found');
+    //         throw new Error('Footer file not found');
     //     }
     //     return response.text();
     // })
     // .then(html => {
-    //     const container = document.getElementById('navbar');
+    //     const container = document.getElementById('footerElement');
     //     if (container) {
     //         container.innerHTML = html;
     //     }
     // })
-    // .catch(error => console.error('Error loading navbar:', error));
+    // .catch(error => console.error('Error loading footer:', error));
 
 })

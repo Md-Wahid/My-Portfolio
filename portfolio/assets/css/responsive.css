@@ -1,0 +1,47 @@
+@media(max-width:991px){
+
+    .hero-section{
+        text-align:center;
+    }
+
+    .hero-title{
+        font-size:45px;
+    }
+
+    .hero-typing{
+        font-size:28px;
+    }
+
+    .hero-description{
+        margin:auto;
+    }
+
+    .section-title{
+        font-size:32px;
+    }
+
+    .counter-number{
+        font-size:35px;
+    }
+
+    .cta-box{
+        padding:50px 20px;
+    }
+
+}
+
+@media(max-width:767px){
+
+    .section-padding{
+        padding:70px 0;
+    }
+
+    .hero-title{
+        font-size:38px;
+    }
+
+    .hero-typing{
+        font-size:24px;
+    }
+
+}
