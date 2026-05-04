@@ -34,7 +34,7 @@
     <!-- CDN for animation on scrolling -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <!-- CDN for AJAX -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Custom CSS -->
@@ -44,14 +44,723 @@
     <!-- Custom CSS for Navbar -->
     <link rel="stylesheet" href="assets/css/navbar.css">
 </head>
-<body>
+<body class="light-mode">
     <header class="w-100" id="navbar"></header>
 
-    <h1 class="text-center mt-5" data-aos="fade-up">
+    <!-- <h1 class="text-center mt-5" data-aos="fade-up">
         Welcome to My Portfolio</h1>
     <p class="text-center mb-5" data-aos="fade-up" data-aos-delay="200">
-        Explore my projects, skills, and experience.</p>
+        Explore my projects, skills, and experience.</p> -->
+
+    <!-- Hero Section Start -->
+    <section class="hero-section d-flex align-items-center">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- Left Content -->
+                <div class="col-lg-6">
+
+                    <div class="hero-content">
+
+                        <p class="hero-subtitle mb-3">
+                            Hello, I'm
+                        </p>
+
+                        <h1 class="hero-title mb-3">
+                            Md. Wahid
+                        </h1>
+
+                        <h2 class="hero-typing mb-4">
+                            I'm a
+                            <span id="typed"></span>
+                        </h2>
+
+                        <p class="hero-description mb-4">
+                            Passionate ASP.NET Developer focused on building
+                            modern, secure, responsive, and scalable web applications.
+                        </p>
+
+                        <!-- Buttons -->
+                        <div class="hero-buttons d-flex flex-wrap gap-3">
+
+                            <a href="projects.html"
+                            class="btn btn-info px-4 py-2">
+                                View Projects
+                            </a>
+
+                            <a href="assets/uploads/resume.pdf"
+                            class="btn btn-outline-light px-4 py-2"
+                            download>
+                                Download Resume
+                            </a>
+
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="hero-social mt-5">
+
+                            <a href="#" class="me-3">
+                                <i class="fab fa-github"></i>
+                            </a>
+
+                            <a href="#" class="me-3">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <a href="#" class="me-3">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+
+                    <div class="hero-image">
+
+                        <img src="assets/images/demo-profile.png"
+                            alt="Profile Image"
+                            class="img-fluid">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Preview Section Start -->
+    <section class="about-preview section-padding">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <!-- Image -->
+                <div class="col-lg-5 mb-5 mb-lg-0"
+                    data-aos="fade-right">
+
+                    <div class="about-image text-center">
+
+                        <img src="assets/images/about.png"
+                            alt="About Image"
+                            class="img-fluid rounded-4">
+
+                    </div>
+
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-7"
+                    data-aos="fade-left">
+
+                    <div class="about-content">
+
+                        <h5 class="section-subtitle">
+                            About Me
+                        </h5>
+
+                        <h2 class="section-title mb-4">
+                            Building Modern & Secure Web Applications
+                        </h2>
+
+                        <p class="about-text mb-4">
+                            I am an ASP.NET developer passionate about creating
+                            scalable, responsive, and user-friendly applications
+                            using modern technologies like .NET 8, SQL Server,
+                            Bootstrap, JavaScript, and AJAX.
+                        </p>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="info-box">
+                                    <h6>Name</h6>
+                                    <p>Md. Wahid</p>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="info-box">
+                                    <h6>Email</h6>
+                                    <p>wahid.appl@gmail.com</p>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="info-box">
+                                    <h6>Experience</h6>
+                                    <p>5+ Years Learning</p>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="info-box">
+                                    <h6>Location</h6>
+                                    <p>Narayanganj, Dhaka, Bangladesh</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a href="about.html"
+                        class="btn btn-info mt-3 px-4 py-2">
+                            Read More
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- About Preview Section End -->
+
+    <!-- Skills Preview Section Start -->
+    <section class="skills-preview section-padding">
+
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="text-center mb-5"
+                data-aos="fade-up">
+
+                <h5 class="section-subtitle">
+                    My Skills
+                </h5>
+
+                <h2 class="section-title">
+                    Technologies I Work With
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Skill Item -->
+                <div class="col-md-6 col-lg-3"
+                    data-aos="zoom-in">
+
+                    <div class="skill-card text-center">
+
+                        <i class="fab fa-html5"></i>
+
+                        <h5>HTML5</h5>
+
+                        <p>Semantic & modern web structure.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Skill Item -->
+                <div class="col-md-6 col-lg-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="100">
+
+                    <div class="skill-card text-center">
+
+                        <i class="fab fa-css3-alt"></i>
+
+                        <h5>CSS3</h5>
+
+                        <p>Responsive and modern UI styling.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Skill Item -->
+                <div class="col-md-6 col-lg-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="200">
+
+                    <div class="skill-card text-center">
+
+                        <i class="fab fa-js"></i>
+
+                        <h5>JavaScript</h5>
+
+                        <p>Interactive frontend functionality.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Skill Item -->
+                <div class="col-md-6 col-lg-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="200">
+
+                    <div class="skill-card text-center">
+
+                        . <i class="fa-solid fa-n"></i>&nbsp;<i class="fa-solid fa-e"></i>&nbsp;<i class="fa-solid fa-t"></i>
+
+                        <h5>.NET</h5>
+
+                        <p>A secured backend application.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Skill Item -->
+                <div class="col-md-6 col-lg-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="300">
+
+                    <div class="skill-card text-center">
+
+                        <i class="fas fa-database"></i>
+
+                        <h5>SQL Server</h5>
+
+                        <p>Database design & management.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Skills Preview Section End -->
+
+    <!-- Featured Projects Section Start -->
+    <section class="featured-projects section-padding">
+
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="text-center mb-5"
+                data-aos="fade-up">
+
+                <h5 class="section-subtitle">
+                    My Projects
+                </h5>
+
+                <h2 class="section-title">
+                    Featured Works
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Project Item -->
+                <div class="col-lg-4"
+                    data-aos="fade-up">
+
+                    <div class="project-card">
+
+                        <img src="assets/images/Dummy-Grocery_Billing_System.png"
+                            alt="Project"
+                            class="img-fluid">
+
+                        <div class="project-content">
+
+                            <h4>Grocery Billing System</h4>
+
+                            <p>
+                                A POS-style billing application built with
+                                ASP.NET Core MVC and SQL Server.
+                            </p>
+
+                            <div class="project-buttons">
+
+                                <a href="#"
+                                class="btn btn-info btn-sm">
+                                    Live Demo
+                                </a>
+
+                                <a href="#"
+                                class="btn btn-outline-light btn-sm">
+                                    GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project Item -->
+                <div class="col-lg-4"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+
+                    <div class="project-card">
+
+                        <img src="assets/images/Dummy-Portfolio-CMS.png"
+                            alt="Project"
+                            class="img-fluid">
+
+                        <div class="project-content">
+
+                            <h4>Portfolio CMS</h4>
+
+                            <p>
+                                Dynamic portfolio system with admin panel,
+                                blog management, and authentication.
+                            </p>
+
+                            <div class="project-buttons">
+
+                                <a href="#"
+                                class="btn btn-info btn-sm">
+                                    Live Demo
+                                </a>
+
+                                <a href="#"
+                                class="btn btn-outline-light btn-sm">
+                                    GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project Item -->
+                <div class="col-lg-4"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
+
+                    <div class="project-card">
+
+                        <img src="assets/images/Dummy-Bankify_Dasboard.png"
+                            alt="Project"
+                            class="img-fluid">
+
+                        <div class="project-content">
+
+                            <h4>Banking Dashboard</h4>
+
+                            <p>
+                                Responsive banking analytics dashboard with
+                                charts, cards, and secure UI design.
+                            </p>
+
+                            <div class="project-buttons">
+
+                                <a href="#"
+                                class="btn btn-info btn-sm">
+                                    Live Demo
+                                </a>
+
+                                <a href="#"
+                                class="btn btn-outline-light btn-sm">
+                                    GitHub
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Featured Projects Section End -->
+
+    <!-- Experience Counter Section Start -->
+    <section class="counter-section section-padding">
+
+        <div class="container">
+
+            <div class="row g-4 text-center">
+
+                <!-- Counter Item -->
+                <div class="col-md-6 col-lg-3"
+                    data-aos="zoom-in">
+
+                    <div class="counter-box">
+
+                        <i class="fas fa-folder-open"></i>
+
+                        <h2 class="counter-number">
+                            10+
+                        </h2>
+
+                        <p>Projects Completed</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Counter Item -->
+                <div class="col-md-6 col-lg-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="100">
+
+                    <div class="counter-box">
+
+                        <i class="fas fa-code"></i>
+
+                        <h2 class="counter-number">
+                            20+
+                        </h2>
+
+                        <p>Technologies Learned</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Counter Item -->
+                <div class="col-md-6 col-lg-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="200">
+
+                    <div class="counter-box">
+
+                        <i class="fas fa-user-graduate"></i>
+
+                        <h2 class="counter-number">
+                            2+
+                        </h2>
+
+                        <p>Years Learning</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Counter Item -->
+                <div class="col-md-6 col-lg-3"
+                    data-aos="zoom-in"
+                    data-aos-delay="300">
+
+                    <div class="counter-box">
+
+                        <i class="fas fa-award"></i>
+
+                        <h2 class="counter-number">
+                            5+
+                        </h2>
+
+                        <p>Certificates</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Experience Counter Section End -->
+
+    <!-- Latest Blogs Section Start -->
+    <section class="latest-blogs section-padding">
+
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="text-center mb-5"
+                data-aos="fade-up">
+
+                <h5 class="section-subtitle">
+                    Latest Blogs
+                </h5>
+
+                <h2 class="section-title">
+                    Recent Articles
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Blog Card -->
+                <div class="col-lg-4"
+                    data-aos="fade-up">
+
+                    <div class="blog-card">
+
+                        <img src="assets/images/blog1.jpg"
+                            class="img-fluid"
+                            alt="Blog">
+
+                        <div class="blog-content">
+
+                            <span class="blog-date">
+                                April 2026
+                            </span>
+
+                            <h4>
+                                Clean Architecture in ASP.NET Core
+                            </h4>
+
+                            <p>
+                                Learn how to structure enterprise-level
+                                ASP.NET Core applications properly.
+                            </p>
+
+                            <a href="#"
+                            class="btn btn-info btn-sm">
+                                Read More
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Blog Card -->
+                <div class="col-lg-4"
+                    data-aos="fade-up"
+                    data-aos-delay="100">
+
+                    <div class="blog-card">
+
+                        <img src="assets/images/blog2.jpg"
+                            class="img-fluid"
+                            alt="Blog">
+
+                        <div class="blog-content">
+
+                            <span class="blog-date">
+                                March 2026
+                            </span>
+
+                            <h4>
+                                SQL Server Optimization Tips
+                            </h4>
+
+                            <p>
+                                Improve database performance using indexing,
+                                normalization, and query optimization.
+                            </p>
+
+                            <a href="#"
+                            class="btn btn-info btn-sm">
+                                Read More
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Blog Card -->
+                <div class="col-lg-4"
+                    data-aos="fade-up"
+                    data-aos-delay="200">
+
+                    <div class="blog-card">
+
+                        <img src="assets/images/blog3.jpg"
+                            class="img-fluid"
+                            alt="Blog">
+
+                        <div class="blog-content">
+
+                            <span class="blog-date">
+                                February 2026
+                            </span>
+
+                            <h4>
+                                Bootstrap Tips for Modern UI
+                            </h4>
+
+                            <p>
+                                Build responsive and professional layouts
+                                using Bootstrap 5 components effectively.
+                            </p>
+
+                            <a href="#"
+                            class="btn btn-info btn-sm">
+                                Read More
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Latest Blogs Section End -->
+
+    <!-- Contact CTA Section Start -->
+    <section class="contact-cta section-padding">
+
+        <div class="container">
+
+            <div class="cta-box text-center"
+                data-aos="zoom-in">
+
+                <h2 class="mb-4">
+                    Have Any Project In Mind?
+                </h2>
+
+                <p class="mb-4">
+                    Let's build something modern, secure, and professional together.
+                </p>
+
+                <a href="contact.html"
+                class="btn btn-info px-5 py-3">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Contact CTA Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-section" id="footerElement"></footer>
+    <!-- Footer End -->
+
     
+
     <!-- CDN for jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -63,16 +772,12 @@
 
     <!-- CDN for Animation on Scroll -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration:1000,
-            once:true
-        });
-    </script>
+
+    <!-- Custom JavaScript for Navbar and Footer -->
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/footer.js"></script>
 
     <!-- Custom JavaScript -->
     <script src="assets/js/app.js"></script>
-    <!-- Custom JavaScript for Navbar -->
-    <script src="./assets/js/navbar.js"></script>
 </body>
 </html>
