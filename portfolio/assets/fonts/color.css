@@ -1,0 +1,32 @@
+:root{
+    --primary:#0f172a;      /* Main Dark Navy */
+    --secondary:#1e293b;    /* Section/Card Background */
+    --accent:#06b6d4;       /* Cyan Accent */
+    --light:#f8fafc;        /* Light Text */
+    --dark:#020617;         /* Deep Dark */
+
+    /* Extra Shades */
+    --section-dark:#111827; /* Alternate Section Background */
+    --card-bg:var(--secondary);      /* Card Background */
+    --border:#334155;       /* Border Color */
+    --text-muted:#cbd5e1;   /* Secondary Text */
+}
+
+.text-primary {
+    color: var(--primary);
+}
+.text-secondary {
+    color: var(--secondary);
+}
+.text-accent {
+    color: var(--accent);
+}
+.text-light {
+    color: var(--light);
+}
+.text-dark {
+    color: var(--dark);
+}
+.text-muted {
+    color: var(--text-muted);
+}

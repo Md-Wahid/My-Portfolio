@@ -1,29 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function () {
+    // Load Navbar
+    $("#navbar").load("./components/navbar.html", function () {
 
-    $.ajax({
-        url: './components/navbar.html',
-        method: 'GET',
-        success: function(data) {
-            $('#navbar').html(data);
-        },
-        error: function() {
-            console.error('Error loading navbar');
-        }
-    })
-
-    // fetch('./components/navbar.html')
-    // .then(response => {
-    //     if (!response.ok) {
-    //         throw new Error('Navbar file not found');
-    //     }
-    //     return response.text();
-    // })
-    // .then(html => {
-    //     const container = document.getElementById('navbar');
-    //     if (container) {
-    //         container.innerHTML = html;
-    //     }
-    // })
-    // .catch(error => console.error('Error loading navbar:', error));
-
-})
+    });
+});

@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Home",
+        "displayText": "Home",
+        "url": "index.html",
+        "isactive": true,
+        "child": []
+    },
+    {
+        "name": "About",
+        "displayText": "About",
+        "url": "about.html",
+        "isactive": false,
+        "child": []
+    },
+    {
+        "name": "Projects",
+        "displayText": "Projects",
+        "url": "projects.html",
+        "isactive": false,
+        "child": []
+    },
+    {
+        "name": "Skills",
+        "displayText": "Skills",
+        "url": "skills.html",
+        "isactive": false,
+        "child": []
+    },
+    {
+        "name": "Blogs",
+        "displayText": "Blogs",
+        "url": "blogs.html",
+        "isactive": false,
+        "child": []
+    },
+    {
+        "name": "Services",
+        "displayText": "Services",
+        "url": "services.html",
+        "isactive": false,
+        "child": []
+    },
+    {
+        "name": "More",
+        "displayText": "More",
+        "url": "",
+        "isactive": false,
+        "child": [
+            {
+                "name": "Terms & Condition",
+                "displayText": "Terms & Conditions",
+                "url": "termsnconditions.html",
+                "isactive": false,
+                "child": [
+                    {
+                        "name": "Terms & Condition",
+                        "displayText": "Terms & Conditions",
+                        "url": "",
+                        "isactive": false,
+                        "child": [
+                            {
+                                "name": "Terms",
+                                "displayText": "Terms",
+                                "url": "terms.html",
+                                "isactive": false,
+                                "child": []
+                            },
+                            {
+                                "name": "Condition",
+                                "displayText": "Conditions",
+                                "url": "conditions.html",
+                                "isactive": false,
+                                "child": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Privacy & Policy",
+                "displayText": "Privacy & Policy",
+                "url": "privacynpolicy.html",
+                "isactive": false,
+                "child": []
+            }
+        ]
+    },
+    {
+        "name": "Contact",
+        "displayText": "Contact",
+        "url": "contact.html",
+        "isactive": false,
+        "child": []
+    }
+]

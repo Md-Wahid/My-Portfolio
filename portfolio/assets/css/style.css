@@ -10,6 +10,7 @@
     --card-bg:var(--secondary);      /* Card Background */
     --border:#334155;       /* Border Color */
     --text-muted:#cbd5e1;   /* Secondary Text */
+    --text-description: #cbd5e1;
 }
 
 *{
@@ -106,13 +107,18 @@ body{
 /* About */
 .about-text{
     line-height:1.9;
-    color:#cbd5e1;
+    /* color:#cbd5e1; */
+    color: var(--text-description)
 }
 
 .info-box{
     background:#1e293b;
     padding:15px;
     border-radius:12px;
+}
+
+.info-box h6{
+    color: var(--text-muted);
 }
 
 /* Skills */
@@ -134,6 +140,10 @@ body{
     margin-bottom:20px;
 }
 
+.skill-card p{
+    color: var(--text-description);
+}
+
 /* Projects */
 .project-card{
     background:#1e293b;
@@ -152,8 +162,8 @@ body{
 }
 
 .project-content p{
-    color:#cbd5e1;
     margin:20px 0;
+    color:var(--text-description);
 }
 
 /* Counter */
@@ -178,6 +188,10 @@ body{
     margin-bottom:20px;
 }
 
+.counter-box p{
+    color: var(--text-muted);
+}
+
 .counter-number{
     font-size:45px;
     font-weight:700;
@@ -200,6 +214,13 @@ body{
     padding:25px;
 }
 
+.blog-content p{
+    color:var(--text-description);
+}
+.blog-content a{
+    vertical-align: bottom;
+}
+
 .blog-date{
     color:var(--accent);
     font-size:14px;
@@ -216,6 +237,10 @@ body{
     border-radius:25px;
 }
 
+.cta-box p{
+    color: var(--text-description);
+}
+
 /* Footer */
 .footer-section{
     background:var(--dark);
@@ -229,6 +254,11 @@ body{
 .footer-links{
     list-style:none;
     padding:0;
+}
+
+.footer-text{
+    color:var(--text-muted);
+    
 }
 
 .footer-links li{
@@ -262,8 +292,126 @@ body{
     color:var(--text-muted);
 }
 
+/* ********************** */
+/* Start of About CSS */
+/* ********************** */
+/* Breadcrumb */
+.breadcrumb-section{
+    color:var(--accent);
+    background:var(--section-dark);
+    padding:120px 0 80px;
+    text-align:center;
+}
+
+.breadcrumb-title{
+    color:var(--light);
+    font-size:50px;
+    font-weight:700;
+}
+
+/* About */
+.about-description{
+    color:#1e293b, var(--text-muted);
+    line-height:1.9;
+}
+.about-hero .info-box {
+    color: #e4ecf3 !important;
+}
+
+/* Timeline */
+.timeline{
+    position:relative;
+    max-width:800px;
+    margin:auto;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:50%;
+    top:0;
+    width:3px;
+    height:100%;
+    background:var(--accent);
+    transform:translateX(-50%);
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:50px;
+}
+
+.timeline-content{
+    background:var(--secondary);
+    padding:30px;
+    border-radius:20px;
+    width:45%;
+    color: #e4ecf3;
+}
+
+.timeline-item:nth-child(odd) .timeline-content{
+    margin-left:auto;
+}
+
+.timeline-year{
+    color:var(--accent);
+    font-weight:600;
+}
+
+/* Skills */
+.skills-section{
+    background:var(--section-dark);
+}
+
+.skills-section .section-title{
+    color: var(--light);
+}
+
+.skill-progress{
+    background:var(--secondary);
+    padding:25px;
+    border-radius:15px;
+}
+.skill-progress h6{
+    color: var(--text-muted);
+}
+.skill-progress span{
+    color: var(--accent);
+}
+
+.progress{
+    height:10px;
+    background:#334155;
+    border-radius:20px;
+}
+
+.progress-bar{
+    background:var(--accent);
+}
+
+.cta-box{
+    color: var(--light);
+}
+/* ********************** */
+/* End of About CSS */
+/* ********************** */
+
+
 /* Dark Mode Toggle */
+/* color:var(--light); */
 /* body.light-mode{
     background:#ffffff;
     color:#000000;
+}
+body.light-mode .skill-card,
+body.light-mode .info-box
+body.light-mode .project-content h4,
+body.light-mode .footer-section,
+body.light-mode .cta-box,
+body.light-mode .blog-card {
+    color: var(--light)
+}
+
+body.light-mode .about-text {
+    color: #7a7a7a
 } */

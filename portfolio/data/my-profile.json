@@ -1,0 +1,18 @@
+{
+    "name": "Md. Wahid",
+    "mobile": {
+        "countryCode": "+880",
+        "number": 1689308776
+    },
+    "email": "wahid.appl@gmail.com",
+    "district": "Narayanganj",
+    "division": "Dhaka",
+    "country": "Bangladesh",
+    "location": "Narayanganj, Dhaka, Bangladesh",
+    "portfolio": {
+        "name": "Wahid's Planet",
+        "faviconAddress": "assets/uploads/GG_Logo_Glob_(500_x_500)_Croped.png",
+        "logoAddress": "assets/uploads/GG_Logo_Glob_(500_x_500)_Croped.png",
+        "bannerAddress": "assets/uploads/GG_Logo_Glob_(500_x_500)_Croped.png"
+    }
+}

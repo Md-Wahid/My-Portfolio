@@ -24,12 +24,13 @@ body{
 }
 
 .navbar .nav-link{
-    color:var(--light);
-    margin:0 10px;
+    /* color:var(--light); */
+    /* margin:0 10px; */
     transition:0.3s;
 }
 
-.navbar .nav-link:hover{
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
     color:var(--accent);
 }
 
