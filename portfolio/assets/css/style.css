@@ -482,8 +482,9 @@ body{
 /* ************************* */
 
 .blog-details-card{
-    background: var(--secondary);
     padding: 40px;
+    color:var(--light);
+    background: var(--secondary);
     border-radius: 25px;
 }
 
