@@ -48,6 +48,8 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/color.css">
 
+    <!-- Custom CSS for Navbar and Footer -->
+    <link rel="stylesheet" href="assets/css/navbar.css">
 </head>
 
 <body>
@@ -264,6 +266,7 @@
                 <!-- Item -->
                 <div class="timeline-item"
                      data-aos="fade-up">
+                    <div class="pointer"></div>
 
                     <div class="timeline-content">
 
@@ -288,6 +291,7 @@
                 <div class="timeline-item"
                      data-aos="fade-up"
                      data-aos-delay="100">
+                    <div class="pointer"></div>
 
                     <div class="timeline-content">
 
@@ -315,6 +319,7 @@
                      data-aos-delay="100">
 
                     <div class="timeline-content">
+                    <div class="pointer"></div>
 
                         <span class="timeline-year">
                             2020
@@ -339,6 +344,7 @@
                      data-aos-delay="100">
 
                     <div class="timeline-content">
+                    <div class="pointer"></div>
 
                         <span class="timeline-year">
                             2018
@@ -560,16 +566,6 @@
 
     <!-- Custom JavaScript for Navbar and Footer -->
     <script src="assets/js/navbar.js"></script>
-    <script>
-        $(document).ready(function(){
-            setNavItemActive();
-            function setNavItemActive(){
-                if($('.nav-link').hasClass('active')) $('.nav-link').classList.remove('active');
-                $('a.active-1').addClass('active');
-            }
-        })
-        
-    </script>
 
     <!-- App JS -->
     <script src="assets/js/app.js"></script>

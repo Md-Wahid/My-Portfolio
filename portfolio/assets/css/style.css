@@ -204,22 +204,32 @@ body{
     overflow:hidden;
     transition:0.3s;
     height:100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .blog-card:hover{
     transform:translateY(-10px);
 }
 
+.blog-card-body {
+    margin-bottom: -30px;
+}
+
 .blog-content{
     padding:25px;
 }
 
-.blog-content p{
+.blog-content p {
     color:var(--text-description);
 }
-.blog-content a{
-    vertical-align: bottom;
+.blog-card-footer {
+    margin-top: auto;
+    padding: 10px 25px 25px;
 }
+/* .blog-content a{
+    vertical-align: bottom;
+} */
 
 .blog-date{
     color:var(--accent);
@@ -296,21 +306,21 @@ body{
 /* Start of About CSS */
 /* ********************** */
 /* Breadcrumb */
-.breadcrumb-section{
+.breadcrumb-section {
     color:var(--accent);
     background:var(--section-dark);
     padding:120px 0 80px;
     text-align:center;
 }
 
-.breadcrumb-title{
+.breadcrumb-title {
     color:var(--light);
     font-size:50px;
     font-weight:700;
 }
 
 /* About */
-.about-description{
+.about-description {
     color:#1e293b, var(--text-muted);
     line-height:1.9;
 }
@@ -319,13 +329,13 @@ body{
 }
 
 /* Timeline */
-.timeline{
+.timeline {
     position:relative;
     max-width:800px;
     margin:auto;
 }
 
-.timeline::before{
+.timeline::before {
     content:'';
     position:absolute;
     left:50%;
@@ -336,9 +346,23 @@ body{
     transform:translateX(-50%);
 }
 
-.timeline-item{
+.timeline-item {
     position:relative;
     margin-bottom:50px;
+}
+.timeline-item .pointer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    background: var(--light);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.timeline-item .pointer:hover {
+    background: var(--dark);
+    border: 2px solid var(--light);
 }
 
 .timeline-content{

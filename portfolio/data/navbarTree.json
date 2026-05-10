@@ -28,6 +28,13 @@
         "child": []
     },
     {
+        "name": "Certificates",
+        "displayText": "Certificates",
+        "url": "certificates.html",
+        "isactive": false,
+        "child": []
+    },
+    {
         "name": "Blogs",
         "displayText": "Blogs",
         "url": "blogs.html",
@@ -44,7 +51,7 @@
     {
         "name": "More",
         "displayText": "More",
-        "url": "",
+        "url": "#",
         "isactive": false,
         "child": [
             {

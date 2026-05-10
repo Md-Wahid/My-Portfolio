@@ -44,6 +44,9 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/color.css">
+
+    <!-- Custom CSS for Navbar and Footer -->
+    <link rel="stylesheet" href="assets/css/navbar.css">
 </head>
 <body>
 
@@ -100,7 +103,7 @@
                     <div class="blog-search mb-5">
                         <form action="javascript:void(0)">
                             <div class="input-group">
-                                <input type="text" placeholder="Search blogs..." class="form-control">
+                                <input id="searchInput" type="text" placeholder="Search blogs..." class="form-control">
                                 <button class="btn btn-info" type="submit">Search</button>
                             </div>
                         </form>
@@ -112,13 +115,18 @@
                         <!-- Blog Item -->
                         <div class="col-md-6" data-aos="fade-up">
                             <div class="blog-card">
-                                <img src="assets/uploads/Encapsulation.png" alt="Blog" class="img-fluid">
-                                <div class="blog-content">
-                                    <span class="blog-category">ASP.NET</span>
-                                    <h4>Clean Architecture in ASP.NET Core</h4>
-                                    <p>
-                                        Learn how to structure enterprise-grade ASP.NET Core applications professionally.
-                                    </p>
+                                <div class="blog-card-body">
+                                    <img src="assets/uploads/Encapsulation.png" alt="Blog" class="img-fluid">
+                                    <div class="blog-content">
+                                        <span class="d-none tags">Backend, C#, ASP.NET, ASP.NET Core, Clean Architecture, Architecture, application, ASP.NET Core application</span>
+                                        <span class="blog-category">ASP.NET</span>
+                                        <h4>Clean Architecture in ASP.NET Core</h4>
+                                        <p>
+                                            Learn how to structure enterprise-grade ASP.NET Core applications professionally.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="blog-card-footer">
                                     <a href="blog-details.html" class="btn btn-info btn-sm">Read More</a>
                                 </div>
                             </div>
@@ -127,13 +135,18 @@
                         <!-- Blog Item -->
                         <div class="col-md-6" data-aos="fade-up">
                             <div class="blog-card">
-                                <img src="assets/images/blog2.png" alt="Blog" class="img-fluid">
-                                <div class="blog-content">
-                                    <span class="blog-category">SQL Server</span>
-                                    <h4>SQL Optimization Techniques</h4>
-                                    <p>
-                                        Improve database performance using indexing and query optimization.
-                                    </p>
+                                <div class="blog-card-body">
+                                    <img src="assets/images/blog2.png" alt="Blog" class="img-fluid">
+                                    <div class="blog-content">
+                                        <span class="d-none tags">Backend, Database, SQL, SQL Server, SQL Server Database, SQL Optimization, indexing, query, optimization, indexing and query, query optimization, indexing and query optimization</span>
+                                        <span class="blog-category">SQL Server</span>
+                                        <h4>SQL Optimization Techniques</h4>
+                                        <p>
+                                            Improve database performance using indexing and query optimization.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="blog-card-footer">
                                     <a href="blog-details.html" class="btn btn-info btn-sm">Read More</a>
                                 </div>
                             </div>
@@ -142,30 +155,45 @@
                         <!-- Blog Item -->
                         <div class="col-md-6" data-aos="fade-up">
                             <div class="blog-card">
-                                <img src="assets/images/blog2.png" alt="Blog" class="img-fluid">
-                                <div class="blog-content">
-                                    <span class="span blog-category">Frontend</span>
-                                    <h4>Bootstrap 5 Best Practices</h4>
-                                    <p>
-                                        Build responsive layouts professionally using Bootstrap components.
-                                    </p>
+                                <div class="blog-card-body">
+                                    <div class="blog-card-content">
+                                        <img src="assets/images/blog3.png" alt="Blog" class="img-fluid">
+                                        <div class="blog-content">
+                                            <span class="d-none tags">Frontend, Bootstrap, Bootstrap 5, Bootstrap Components, Responsive Layouts, Responsive, Layouts</span>
+                                            <span class="span blog-category">Frontend</span>
+                                            <h4>Bootstrap 5 Best Practices</h4>
+                                            <p>
+                                                Build responsive layouts professionally using Bootstrap components.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blog-card-footer">
                                     <a href="blog-details.html" class="btn btn-info btn-sm">Read More</a>
                                 </div>
                             </div>
                         </div>
+
                      </div>
 
                      <!-- Pagination -->
                       <div class="mt-5">
                         <nav>
                             <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a href="" class="page-link">Previous</a>
+                                </li>
                                 <li class="page-item active">
                                     <a href="" class="page-link">1</a>
                                 </li>
                                 <li class="page-item">
                                     <a href="" class="page-link">2</a>
+                                </li>
                                 </li class="page-item">
                                     <a href="" class="page-link">3</a>
+                                </li>
+                                </li class="page-item">
+                                    <a href="" class="page-link">Next</a>
                                 </li>
                             </ul>
                         </nav>
@@ -223,11 +251,45 @@
     <script src="assets/js/footer.js"></script>
     <script>
         $(document).ready(function(){
+            let blogs = [{id: '', title: '', desc: '', tags: []}]
             setNavItemActive();
+            // populateBlogsArray();
             function setNavItemActive(){
                 if($('.nav-link').hasClass('active')) $('.nav-link').classList.remove('active');
                 $('a.active-1').addClass('active');
             }
+
+            // function populateBlogsArray() {
+            //     $('.blog-content').each(function (index) {
+            //         $(this).parents('.col-md-6').attr('id', 'blog-' + (index+1));
+            //         blogs.push(
+            //             {
+            //                 id: 'blog-' + (index+1),
+            //                 title: $(this).children('h4').text(),
+            //                 desc: $(this).children('p').text(),
+            //                 tags: [$(this).children('.tags').text().split(',')]
+            //             }
+            //         )
+            //     })
+            // }
+
+            // document.getElementById("searchInput").addEventListener("keyup", function () {
+            //     let value = this.value.toLowerCase();
+
+            //     let filtered = blogs.filter(blog =>
+            //         blog.title.toLowerCase().includes(value) ||
+            //         blog.desc.toLowerCase().includes(value)
+            //     );
+            //     filtered.each(function(idx){
+            //         if(!$('#searchInput').includes($(this))) $('#blog-' + (index+1)).hide();
+            //     });
+
+            //     // displayBlogs(filtered);
+            // });
+
+            // // function displayBlogs(filtered) {
+                
+            // // }
         })
         
     </script>
